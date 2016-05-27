@@ -1,5 +1,14 @@
-<ion-view view-title="Search">
-  <ion-content>
-    <h1>Chat</h1>
-  </ion-content>
+<ion-view view-title="Chat">
+    <ion-content>
+        <ul id="lista" class="list"></ul>
+    </ion-content>
+    <div class="bar bar-footer bar-balanced item-input-inset">
+        <label class="item-input-wrapper">
+            <i class="icon ion-chatbox placeholder-icon"></i>
+            <input id="msg" type="text" placeholder="Mensaje">
+        </label>
+        <button class="button button-clear" ng-click="enviarMsg()">
+            Enviar
+        </button>
+    </div>
 </ion-view>

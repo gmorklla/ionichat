@@ -24,7 +24,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
-
     .state('app', {
     url: '/app',
     abstract: true,
@@ -36,7 +35,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     url: '/chat',
     views: {
       'menuContent': {
-        templateUrl: 'templates/chat.html'
+        templateUrl: 'templates/chat.html',
+        controller: 'ChatCtrl'
       }
     }
   })
