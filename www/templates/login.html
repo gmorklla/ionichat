@@ -1,0 +1,24 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Inicio de sesión</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeLogin()">Cerrar</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+      <div class="list">
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Nombre de usuario</span>
+          <input type="text" placeholder="First Name" ng-model="loginData.username">
+        </label>
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Contraseña</span>
+          <input type="text" placeholder="First Name" ng-model="loginData.password">
+        </label>       
+      </div>
+      <div class="button-bar">
+        <a class="button button-block button-balanced" ng-click="email()">Iniciar</a>
+        <a class="button button-block button-positive" ng-click="faceLog()">Iniciar con Facebook</a>
+      </div>      
+  </ion-content>
+</ion-modal-view>
